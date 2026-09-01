@@ -56,7 +56,9 @@ smsButton.href = `sms:01050930672${smsSeparator}body=${encodeURIComponent(orderM
 const shareButton = document.querySelector("#shareButton");
 
 async function copyShareLink() {
-  const copied = await writeToClipboard(window.location.href);
+  const shareUrl = new URL(window.location.href);
+  shareUrl.searchParams.set("v", "20260915");
+  const copied = await writeToClipboard(shareUrl.href);
   showToast(
     copied
       ? "공유 URL을 복사했어요"
