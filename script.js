@@ -54,41 +54,16 @@ const smsSeparator = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? "&" : "?";
 smsButton.href = `sms:01050930672${smsSeparator}body=${encodeURIComponent(orderMessage)}`;
 
 const shareButton = document.querySelector("#shareButton");
-const isKakaoInAppBrowser = /KAKAOTALK/i.test(navigator.userAgent);
-
-if (isKakaoInAppBrowser) {
-  shareButton.lastChild.textContent = " 링크 복사해서 공유하기";
-}
 
 async function copyShareLink() {
   const copied = await writeToClipboard(window.location.href);
   showToast(
     copied
-      ? "링크를 복사했어요. 카카오톡 채팅방에 붙여넣어 주세요."
-      : "주소창의 링크를 복사해 카카오톡에 붙여넣어 주세요.",
+      ? "공유 URL을 복사했어요"
+      : "주소창의 URL을 복사해 주세요.",
   );
 }
 
 shareButton.addEventListener("click", async () => {
-  const shareData = {
-    title: "얼음골 사과(홍로) 가격표",
-    text: "얼음골 사과(홍로) 가정용·추석 선물용 가격표를 확인해 보세요.",
-    url: window.location.href,
-  };
-
-  const canUseNativeShare =
-    !isKakaoInAppBrowser &&
-    typeof navigator.share === "function" &&
-    (typeof navigator.canShare !== "function" || navigator.canShare(shareData));
-
-  if (canUseNativeShare) {
-    try {
-      await navigator.share(shareData);
-      return;
-    } catch (error) {
-      if (error.name === "AbortError") return;
-    }
-  }
-
   await copyShareLink();
 });
