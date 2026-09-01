@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#8f1d16" />
+    <meta name="theme-color" content="#274b2e" />
     <meta
       name="description"
       content="밀양 얼음골 홍로 사과 가격표입니다. 가정용 10kg, 추석 선물용 5kg 가격과 주문 정보를 확인하세요."
@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Pretendard:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -33,64 +33,83 @@
     <main>
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow">천연의 빛은 명품</p>
-          <h1 id="page-title">얼음골 <span>사과</span></h1>
-          <p class="variety">아삭하고 달콤한 햇 <strong>홍로</strong></p>
-          <div class="delivery-badge">전 상품 택배비 포함</div>
+          <p class="eyebrow"><span aria-hidden="true">◆</span> 천연의 빛은 명품 <span aria-hidden="true">◆</span></p>
+          <h1 id="page-title"><span class="title-green">얼음골</span> <span class="title-red">사과</span></h1>
+          <p class="variety">밀양 얼음골에서 자란<br /><strong>아삭하고 달콤한 햇 홍로</strong></p>
+          <div class="hero-badges">
+            <span>전 상품 택배비 포함</span>
+            <span>햇 홍로</span>
+          </div>
         </div>
-        <div class="apple-visual" aria-hidden="true">
-          <div class="leaf"></div>
-          <div class="apple-glow"></div>
-          <img src="apple-box.png" alt="" />
+        <figure class="apple-visual">
+          <img src="apple-box.png" alt="초록색 얼음골 사과 박스와 빨간 홍로 사과" />
+        </figure>
+      </section>
+
+      <section class="shipping-notice" aria-label="배송 안내">
+        <div class="notice-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 4h11v10H3V4Zm11 4h3.4L21 12v2h-7V8ZM6.5 18a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm11 0a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>
+        </div>
+        <div>
+          <span>배송 안내</span>
+          <p><strong>9월 15일</strong>부터 택배가 시작됩니다.</p>
         </div>
       </section>
 
-      <div class="shipping-notice" role="note">
-        <span>배송 안내</span>
-        <p><strong>9월 15일</strong>부터 택배가 시작됩니다.</p>
+      <div class="product-wrap">
+        <section class="price-section home" aria-labelledby="home-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">우리 집에서 넉넉하게</p>
+              <h2 id="home-title">가정용 <span>10kg</span></h2>
+            </div>
+            <span class="shipping-tag">택배비 포함</span>
+          </div>
+
+          <div class="price-header" aria-hidden="true">
+            <span>과수</span><span>개당 기준</span><span>가격</span>
+          </div>
+          <ul class="price-list">
+            <li><span class="count">26과</span><small>약 385g · 약 4,615원</small><strong>120,000원</strong></li>
+            <li><span class="count">30과</span><small>약 333g · 약 3,667원</small><strong>110,000원</strong></li>
+            <li><span class="count">36과</span><small>약 278g · 약 2,361원</small><strong>85,000원</strong></li>
+            <li><span class="count">40과</span><small>약 250g · 1,875원</small><strong>75,000원</strong></li>
+            <li><span class="count">46과</span><small>약 217g · 약 1,413원</small><strong>65,000원</strong></li>
+            <li><span class="count">50과</span><small>약 200g · 1,100원</small><strong>55,000원</strong></li>
+          </ul>
+          <p class="unit-note">개당 중량과 가격은 총 중량·상자 가격을 과수로 나눈 평균값입니다.</p>
+        </section>
+
+        <section class="price-section gift" aria-labelledby="gift-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">마음을 담은 추석 선물</p>
+              <h2 id="gift-title">선물용 <span>5kg</span></h2>
+            </div>
+            <span class="shipping-tag">택배비 포함</span>
+          </div>
+
+          <div class="price-header" aria-hidden="true">
+            <span>과수</span><span>개당 기준</span><span>가격</span>
+          </div>
+          <ul class="price-list">
+            <li><span class="count">13과</span><small>약 385g · 약 4,615원</small><strong>60,000원</strong></li>
+            <li><span class="count">15과</span><small>약 333g · 약 3,667원</small><strong>55,000원</strong></li>
+            <li><span class="count">18과</span><small>약 278g · 2,500원</small><strong>45,000원</strong></li>
+            <li><span class="count">20과</span><small>약 250g · 2,000원</small><strong>40,000원</strong></li>
+            <li><span class="count">23과</span><small>약 217g · 약 1,522원</small><strong>35,000원</strong></li>
+            <li><span class="count">25과</span><small>약 200g · 1,200원</small><strong>30,000원</strong></li>
+          </ul>
+          <p class="unit-note">개당 중량과 가격은 총 중량·상자 가격을 과수로 나눈 평균값입니다.</p>
+        </section>
       </div>
 
-      <section class="price-section" aria-labelledby="home-title">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">우리 집에서 넉넉하게</p>
-            <h2 id="home-title">가정용 <span>10kg</span></h2>
-          </div>
-          <p>택배비 포함</p>
-        </div>
-        <ul class="price-list">
-          <li><div class="count-info"><span class="count">26과</span><small>1개 약 385g · 약 4,615원</small></div><strong>120,000원</strong></li>
-          <li><div class="count-info"><span class="count">30과</span><small>1개 약 333g · 약 3,667원</small></div><strong>110,000원</strong></li>
-          <li><div class="count-info"><span class="count">36과</span><small>1개 약 278g · 약 2,361원</small></div><strong>85,000원</strong></li>
-          <li><div class="count-info"><span class="count">40과</span><small>1개 약 250g · 1,875원</small></div><strong>75,000원</strong></li>
-          <li><div class="count-info"><span class="count">46과</span><small>1개 약 217g · 약 1,413원</small></div><strong>65,000원</strong></li>
-          <li><div class="count-info"><span class="count">50과</span><small>1개 약 200g · 1,100원</small></div><strong>55,000원</strong></li>
-        </ul>
-        <p class="unit-note">개당 중량과 가격은 총 중량·상자 가격을 과수로 나눈 평균값입니다.</p>
-      </section>
-
-      <section class="price-section gift" aria-labelledby="gift-title">
-        <div class="section-heading">
-          <div>
-            <p class="section-kicker">마음을 담은 추석 선물</p>
-            <h2 id="gift-title">선물용 <span>5kg</span></h2>
-          </div>
-          <p>택배비 포함</p>
-        </div>
-        <ul class="price-list">
-          <li><div class="count-info"><span class="count">13과</span><small>1개 약 385g · 약 4,615원</small></div><strong>60,000원</strong></li>
-          <li><div class="count-info"><span class="count">15과</span><small>1개 약 333g · 약 3,667원</small></div><strong>55,000원</strong></li>
-          <li><div class="count-info"><span class="count">18과</span><small>1개 약 278g · 2,500원</small></div><strong>45,000원</strong></li>
-          <li><div class="count-info"><span class="count">20과</span><small>1개 약 250g · 2,000원</small></div><strong>40,000원</strong></li>
-          <li><div class="count-info"><span class="count">23과</span><small>1개 약 217g · 약 1,522원</small></div><strong>35,000원</strong></li>
-          <li><div class="count-info"><span class="count">25과</span><small>1개 약 200g · 1,200원</small></div><strong>30,000원</strong></li>
-        </ul>
-        <p class="unit-note">개당 중량과 가격은 총 중량·상자 가격을 과수로 나눈 평균값입니다.</p>
-      </section>
-
       <section class="order-card" aria-labelledby="order-title">
-        <p class="section-kicker">전화 한 통으로 간편하게</p>
-        <h2 id="order-title">주문 및 입금 안내</h2>
+        <div class="order-title-wrap">
+          <p class="section-kicker">문자 한 통으로 간편하게</p>
+          <h2 id="order-title">주문 및 입금 안내</h2>
+        </div>
+
         <div class="order-grid">
           <div class="info-row">
             <span class="info-label">주문처</span>
@@ -113,18 +132,19 @@
             </button>
           </div>
         </div>
+
         <div class="order-method">
           <div class="order-method-heading">
             <div>
               <span>주문 방법</span>
-              <h3>문자로 보내주세요</h3>
+              <h3>아래 내용을 문자로 보내주세요</h3>
             </div>
             <button class="template-copy" type="button" id="copyOrderButton">내용 복사</button>
           </div>
           <div class="order-template" aria-label="주문 문자 양식">
-            <p><span>주문자 성함</span><strong>:</strong></p>
-            <p><span>집주소</span><strong>:</strong></p>
-            <p><span>받는 사람 핸드폰 번호</span><strong>:</strong></p>
+            <p><span>주문자 성함</span><strong>:</strong><em>작성해 주세요</em></p>
+            <p><span>집주소</span><strong>:</strong><em>작성해 주세요</em></p>
+            <p><span>받는 사람 핸드폰 번호</span><strong>:</strong><em>작성해 주세요</em></p>
             <p class="example">
               <span>주문하고자 하는 것</span><strong>:</strong>
               <em>홍로사과 5키로 20과 · 40,000원 · 2박스</em>
@@ -135,12 +155,19 @@
             주문 문자 작성하기
           </a>
         </div>
+
         <button class="share-button" type="button" id="shareButton">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1Zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2Zm0 16H8V7h11v14Z"/></svg>
           공유하기 URL 복사
         </button>
         <p class="order-note">주문 시 원하시는 중량과 사과 개수를 말씀해 주세요.</p>
       </section>
+
+      <footer class="footer-note">
+        <span aria-hidden="true">◆</span>
+        <p>밀양 얼음골 홍로 · 전 상품 택배비 포함</p>
+        <span aria-hidden="true">◆</span>
+      </footer>
     </main>
 
     <div class="toast" role="status" aria-live="polite"></div>
