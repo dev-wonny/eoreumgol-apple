@@ -1,36 +1,103 @@
 <!doctype html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<meta name="theme-color" content="#31563a" />
-<meta name="description" content="밀양 얼음골 홍로 사과 가격표입니다. 가정용 10kg, 선물용 5kg 가격과 주문 정보를 확인하세요." />
-<title>얼음골 사과 · 홍로 가격표</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=20260901-5" />
-</head>
-<body>
-<main>
-<section class="poster" aria-label="얼음골 사과 상품 및 가격 안내">
-  <img src="./poster.jpg?v=20260901-5" alt="얼음골 사과 홍로 상품 안내. 가정용 10kg과 선물용 5kg 가격표, 9월 15일 배송 시작 안내" />
-</section>
-<section class="order-card" aria-labelledby="order-title">
-  <div class="order-title-wrap"><p class="section-kicker">문자 한 통으로 간편하게</p><h2 id="order-title">주문 및 입금 안내</h2></div>
-  <div class="order-grid">
-    <div class="info-row"><span class="info-label">주문처</span><div class="info-copy"><strong>윤성택</strong><a href="tel:01050930672">010-5093-0672</a></div><a class="icon-button" href="tel:01050930672" aria-label="윤성택에게 전화하기">전화</a></div>
-    <div class="info-row"><span class="info-label">입금</span><div class="info-copy"><strong>농협은행</strong><button class="account" type="button" data-copy="3560975257323">356-0975-2573-23</button></div><button class="icon-button" type="button" data-copy="3560975257323" aria-label="계좌번호 복사">복사</button></div>
-  </div>
-  <div class="order-method">
-    <div class="order-method-heading"><div><span>주문 방법</span><h3>아래 내용을 문자로 보내주세요</h3></div><button class="template-copy" type="button" id="copyOrderButton">내용 복사</button></div>
-    <div class="order-template" aria-label="주문 문자 양식"><p><span>주문자 성함</span><strong>:</strong><em>작성해 주세요</em></p><p><span>집주소</span><strong>:</strong><em>작성해 주세요</em></p><p><span>받는 사람 핸드폰 번호</span><strong>:</strong><em>작성해 주세요</em></p><p class="example"><span>주문하고자 하는 것</span><strong>:</strong><em>홍로사과 5키로 20과 · 40,000원 · 2박스</em></p></div>
-    <a class="sms-button" id="smsButton" href="sms:01050930672">주문 문자 작성하기</a>
-  </div>
-  <button class="share-button" type="button" id="shareButton">공유하기 URL 복사</button><p class="order-note">주문 시 원하시는 중량과 사과 개수를 말씀해 주세요.</p>
-</section>
-</main>
-<div class="toast" role="status" aria-live="polite"></div>
-<script src="script.js?v=20260901-5"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#31563a" />
+    <meta
+      name="description"
+      content="밀양 얼음골 홍로 사과 가격표입니다. 가정용 10kg, 선물용 5kg 가격과 주문 정보를 확인하세요."
+    />
+    <title>얼음골 사과 · 홍로 가격표</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260901-5" />
+  </head>
+  <body>
+    <main>
+      <section class="poster" aria-label="얼음골 사과 상품 및 가격 안내">
+        <img
+          src="./poster2.png"
+          alt="얼음골 사과 홍로 상품 안내. 가정용 10kg과 선물용 5kg 가격표, 9월 15일 배송 시작 안내"
+        />
+      </section>
+      <section class="order-card" aria-labelledby="order-title">
+        <div class="order-title-wrap">
+          <p class="section-kicker">문자 한 통으로 간편하게</p>
+          <h2 id="order-title">주문 및 입금 안내</h2>
+        </div>
+        <div class="order-grid">
+          <div class="info-row">
+            <span class="info-label">주문처</span>
+            <div class="info-copy">
+              <strong>윤성택</strong><a href="tel:01050930672">010-5093-0672</a>
+            </div>
+            <a
+              class="icon-button"
+              href="tel:01050930672"
+              aria-label="윤성택에게 전화하기"
+              >전화</a
+            >
+          </div>
+          <div class="info-row">
+            <span class="info-label">입금</span>
+            <div class="info-copy">
+              <strong>농협은행</strong
+              ><button class="account" type="button" data-copy="3560975257323">
+                356-0975-2573-23
+              </button>
+            </div>
+            <button
+              class="icon-button"
+              type="button"
+              data-copy="3560975257323"
+              aria-label="계좌번호 복사"
+            >
+              복사
+            </button>
+          </div>
+        </div>
+        <div class="order-method">
+          <div class="order-method-heading">
+            <div>
+              <span>주문 방법</span>
+              <h3>아래 내용을 문자로 보내주세요</h3>
+            </div>
+            <button class="template-copy" type="button" id="copyOrderButton">
+              내용 복사
+            </button>
+          </div>
+          <div class="order-template" aria-label="주문 문자 양식">
+            <p>
+              <span>주문자 성함</span><strong>:</strong><em>작성해 주세요</em>
+            </p>
+            <p><span>집주소</span><strong>:</strong><em>작성해 주세요</em></p>
+            <p>
+              <span>받는 사람 핸드폰 번호</span><strong>:</strong
+              ><em>작성해 주세요</em>
+            </p>
+            <p class="example">
+              <span>주문하고자 하는 것</span><strong>:</strong
+              ><em>홍로사과 5키로 20과 · 40,000원 · 2박스</em>
+            </p>
+          </div>
+          <a class="sms-button" id="smsButton" href="sms:01050930672"
+            >주문 문자 작성하기</a
+          >
+        </div>
+        <button class="share-button" type="button" id="shareButton">
+          공유하기 URL 복사
+        </button>
+        <p class="order-note">
+          주문 시 원하시는 중량과 사과 개수를 말씀해 주세요.
+        </p>
+      </section>
+    </main>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js?v=20260901-5"></script>
+  </body>
 </html>
