@@ -1,78 +1,27 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#31563a" />
-  <meta name="description" content="밀양 얼음골 홍로 사과 가격표입니다. 가정용 10kg, 추석 선물용 5kg 가격과 주문 정보를 확인하세요." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="얼음골 사과 · 홍로 가격표" />
-  <meta property="og:description" content="가정용 10kg · 추석 선물용 5kg / 택배비 포함" />
-  <meta property="og:url" content="https://dev-wonny.github.io/eoreumgol-apple/?v=20260915" />
-  <meta property="og:image" content="https://dev-wonny.github.io/eoreumgol-apple/apple-preview-20260915.png" />
-  <title>얼음골 사과 · 홍로 가격표</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="theme-color" content="#31563a" />
+<meta name="description" content="밀양 얼음골 홍로 사과 가격표입니다. 가정용 10kg, 선물용 5kg 가격과 주문 정보를 확인하세요." />
+<title>얼음골 사과 · 홍로 가격표</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260901-3" />
 </head>
 <body>
-  <main>
-    <section class="poster" aria-label="얼음골 사과 상품 및 가격 안내">
-      <img src="poster.svg" alt="얼음골 사과 홍로 상품 안내. 가정용 10kg과 선물용 5kg의 과수별 가격표와 9월 15일 배송 시작 안내" />
-    </section>
-
-    <section class="order-card" aria-labelledby="order-title">
-      <div class="order-title-wrap">
-        <p class="section-kicker">문자 한 통으로 간편하게</p>
-        <h2 id="order-title">주문 및 입금 안내</h2>
-      </div>
-
-      <div class="order-grid">
-        <div class="info-row">
-          <span class="info-label">주문처</span>
-          <div class="info-copy">
-            <strong>윤성택</strong>
-            <a href="tel:01050930672">010-5093-0672</a>
-          </div>
-          <a class="icon-button" href="tel:01050930672" aria-label="윤성택에게 전화하기">전화</a>
-        </div>
-
-        <div class="info-row">
-          <span class="info-label">입금</span>
-          <div class="info-copy">
-            <strong>농협은행</strong>
-            <button class="account" type="button" data-copy="3560975257323">356-0975-2573-23</button>
-          </div>
-          <button class="icon-button" type="button" data-copy="3560975257323" aria-label="계좌번호 복사">복사</button>
-        </div>
-      </div>
-
-      <div class="order-method">
-        <div class="order-method-heading">
-          <div>
-            <span>주문 방법</span>
-            <h3>아래 내용을 문자로 보내주세요</h3>
-          </div>
-          <button class="template-copy" type="button" id="copyOrderButton">내용 복사</button>
-        </div>
-
-        <div class="order-template" aria-label="주문 문자 양식">
-          <p><span>주문자 성함</span><strong>:</strong><em>작성해 주세요</em></p>
-          <p><span>집주소</span><strong>:</strong><em>작성해 주세요</em></p>
-          <p><span>받는 사람 핸드폰 번호</span><strong>:</strong><em>작성해 주세요</em></p>
-          <p class="example"><span>주문하고자 하는 것</span><strong>:</strong><em>홍로사과 5키로 20과 · 40,000원 · 2박스</em></p>
-        </div>
-
-        <a class="sms-button" id="smsButton" href="sms:01050930672">주문 문자 작성하기</a>
-      </div>
-
-      <button class="share-button" type="button" id="shareButton">공유하기 URL 복사</button>
-      <p class="order-note">주문 시 원하시는 중량과 사과 개수를 말씀해 주세요.</p>
-    </section>
-  </main>
-
-  <div class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+<main>
+<section class="poster" aria-label="얼음골 사과 상품 및 가격 안내"><img src="data:image/jpeg;base64,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[... ELLIPSIZATION ...]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" alt="얼음골 사과 홍로 상품 안내. 가정용 10kg과 선물용 5kg 가격표, 9월 15일 배송 시작 안내" /></section>
+<section class="order-card" aria-labelledby="order-title">
+<div class="order-title-wrap"><p class="section-kicker">문자 한 통으로 간편하게</p><h2 id="order-title">주문 및 입금 안내</h2></div>
+<div class="order-grid">
+<div class="info-row"><span class="info-label">주문처</span><div class="info-copy"><strong>윤성택</strong><a href="tel:01050930672">010-5093-0672</a></div><a class="icon-button" href="tel:01050930672" aria-label="윤성택에게 전화하기">전화</a></div>
+<div class="info-row"><span class="info-label">입금</span><div class="info-copy"><strong>농협은행</strong><button class="account" type="button" data-copy="3560975257323">356-0975-2573-23</button></div><button class="icon-button" type="button" data-copy="3560975257323" aria-label="계좌번호 복사">복사</button></div>
+</div>
+<div class="order-method"><div class="order-method-heading"><div><span>주문 방법</span><h3>아래 내용을 문자로 보내주세요</h3></div><button class="template-copy" type="button" id="copyOrderButton">내용 복사</button></div>
+<div class="order-template" aria-label="주문 문자 양식"><p><span>주문자 성함</span><strong>:</strong><em>작성해 주세요</em></p><p><span>집주소</span><strong>:</strong><em>작성해 주세요</em></p><p><span>받는 사람 핸드폰 번호</span><strong>:</strong><em>작성해 주세요</em></p><p class="example"><span>주문하고자 하는 것</span><strong>:</strong><em>홍로사과 5키로 20과 · 40,000원 · 2박스</em></p></div>
+<a class="sms-button" id="smsButton" href="sms:01050930672">주문 문자 작성하기</a></div>
+<button class="share-button" type="button" id="shareButton">공유하기 URL 복사</button><p class="order-note">주문 시 원하시는 중량과 사과 개수를 말씀해 주세요.</p>
+</section></main><div class="toast" role="status" aria-live="polite"></div><script src="script.js?v=20260901-3"></script></body></html>
