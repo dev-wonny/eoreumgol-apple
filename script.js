@@ -38,6 +38,21 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
   });
 });
 
+const orderMessage = `[얼음골 사과 주문]
+주문자 성함:
+집주소:
+받는 사람 핸드폰 번호:
+주문하고자 하는 것: 홍로사과 5키로 20과 40,000원 2박스`;
+
+document.querySelector("#copyOrderButton").addEventListener("click", async () => {
+  const copied = await writeToClipboard(orderMessage);
+  showToast(copied ? "주문 양식을 복사했어요" : "주문 양식을 복사하지 못했어요");
+});
+
+const smsButton = document.querySelector("#smsButton");
+const smsSeparator = /iPhone|iPad|iPod/i.test(navigator.userAgent) ? "&" : "?";
+smsButton.href = `sms:01050930672${smsSeparator}body=${encodeURIComponent(orderMessage)}`;
+
 const shareButton = document.querySelector("#shareButton");
 const isKakaoInAppBrowser = /KAKAOTALK/i.test(navigator.userAgent);
 
