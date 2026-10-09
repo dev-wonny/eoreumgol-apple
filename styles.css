@@ -26,6 +26,16 @@ main {
   box-shadow: 0 0 54px rgba(46, 58, 43, .14);
 }
 
+.poster {
+  background: #f9f4e9;
+}
+
+.poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .catalog { padding-bottom: 8px; background: #f9f4e9; }
 
 .catalog-hero {
