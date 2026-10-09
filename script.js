@@ -57,7 +57,7 @@ const shareButton = document.querySelector("#shareButton");
 
 async function copyShareLink() {
   const shareUrl = new URL(window.location.href);
-  shareUrl.searchParams.set("v", "20261009-gamhong-poster");
+  shareUrl.searchParams.set("v", "20261009-gamhong-1015");
   const copied = await writeToClipboard(shareUrl.href);
   showToast(
     copied
