@@ -106,7 +106,7 @@ h1 span { color: var(--red); }
   filter: blur(30px);
 }
 
-.shipping-notice {
+.availability-notice {
   display: flex;
   margin: 2px 24px 6px;
   padding: 15px 18px;
@@ -117,13 +117,14 @@ h1 span { color: var(--red); }
   border-radius: 15px;
   background: #fff0dc;
 }
-.shipping-notice span { flex: none; color: var(--red); font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
-.shipping-notice p { margin: 0; font-size: .92rem; text-align: right; }
-.shipping-notice strong { color: var(--deep-red); }
+.availability-notice span { flex: none; color: var(--red); font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
+.availability-notice p { margin: 0; font-size: .92rem; text-align: right; }
+.availability-notice strong { color: var(--deep-red); }
 
 .price-section { padding: 36px; }
 .price-section + .price-section { border-top: 1px solid var(--line); }
 .gift { background: #fffdf8; }
+.compact { padding-bottom: 40px; background: #fffaf2; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 18px; }
 .section-heading h2, .order-card h2 { margin: 0; font-size: 1.65rem; letter-spacing: -.04em; }
 .section-heading h2 span { color: var(--red); }

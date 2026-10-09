@@ -42,7 +42,7 @@ const orderMessage = `[얼음골 사과 주문]
 주문자 성함:
 집주소:
 받는 사람 핸드폰 번호:
-주문하고자 하는 것: 홍로사과 5키로 20과 40,000원 2박스`;
+주문하고자 하는 것: 감홍사과 5키로 20과 40,000원 2박스`;
 
 document.querySelector("#copyOrderButton").addEventListener("click", async () => {
   const copied = await writeToClipboard(orderMessage);
@@ -57,7 +57,7 @@ const shareButton = document.querySelector("#shareButton");
 
 async function copyShareLink() {
   const shareUrl = new URL(window.location.href);
-  shareUrl.searchParams.set("v", "20260915");
+  shareUrl.searchParams.set("v", "20261009-gamhong");
   const copied = await writeToClipboard(shareUrl.href);
   showToast(
     copied
