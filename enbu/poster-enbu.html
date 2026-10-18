@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>얼음골 엔부 사과 가격표 이미지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700;800;900&family=Noto+Serif+KR:wght@700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1024px; background: #e7eadc; }
+      body { font-family: "Noto Sans KR", sans-serif; color: #29291f; }
+      #poster { width: 1024px; overflow: hidden; background: #f7f2e5; }
+      .hero { position: relative; height: 440px; overflow: hidden; isolation: isolate; color: #fff; }
+      .hero img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: 56% 50%; }
+      .shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(28,39,18,.97), rgba(43,59,25,.76) 43%, rgba(31,42,20,.06) 82%); }
+      .hero-copy { width: 58%; padding: 54px 0 0 64px; }
+      .eyebrow { margin: 0 0 10px; color: #f4d89d; font-family: "Noto Serif KR", serif; font-size: 22px; font-weight: 800; }
+      h1 { margin: 0; font-family: "Noto Serif KR", serif; font-size: 74px; line-height: 1.04; letter-spacing: -.08em; }
+      h1 span { color: #f7c3b6; }
+      .desc { margin: 20px 0 18px; color: rgba(255,255,255,.9); font-size: 20px; font-weight: 700; }
+      .pill { display: inline-flex; padding: 10px 17px; border: 1px solid rgba(255,255,255,.48); border-radius: 999px; background: rgba(255,255,255,.12); font-size: 16px; font-weight: 900; }
+      .shipping { display: inline-flex; margin-left: 8px; padding: 10px 17px; border: 1px solid #f4d89d; border-radius: 999px; color: #293617; background: #f4d89d; font-size: 16px; font-weight: 900; }
+      .notice { display: flex; margin: -22px 54px 0; padding: 18px 25px; position: relative; z-index: 2; justify-content: space-between; align-items: center; border: 1px solid #d8c690; border-radius: 18px; background: #fff2d2; box-shadow: 0 10px 22px rgba(71,54,26,.12); }
+      .notice b { color: #8d271e; font-size: 16px; letter-spacing: .08em; }
+      .notice span { color: #4f442d; font-size: 18px; font-weight: 800; }
+      .prices { padding: 30px 54px 18px; }
+      .group { padding: 20px 22px; border: 1px solid #d8d2bd; border-radius: 20px; background: rgba(255,255,255,.86); box-shadow: 0 7px 18px rgba(52,65,44,.06); }
+      .group + .group { margin-top: 14px; }
+      .group-head { display: flex; margin-bottom: 12px; justify-content: space-between; align-items: end; }
+      .group-head p { margin: 0 0 2px; color: #75816e; font-size: 13px; font-weight: 900; letter-spacing: .05em; }
+      h2 { margin: 0; color: #3d5128; font-family: "Noto Serif KR", serif; font-size: 31px; line-height: 1.15; }
+      .group-head b { color: #962a21; font-size: 14px; }
+      table { width: 100%; overflow: hidden; border: 1px solid #ddd3bd; border-collapse: separate; border-spacing: 0; border-radius: 12px; font-variant-numeric: tabular-nums; }
+      th { padding: 7px 8px; color: #565c4b; background: #eef0de; font-size: 13px; }
+      td { padding: 7px 8px; border-top: 1px solid #e4dccb; color: #34352e; font-size: 15px; font-weight: 800; line-height: 1.18; text-align: center; }
+      th + th, td + td { border-left: 1px solid #e4dccb; }
+      td:first-child { color: #3d5128; font-size: 17px; }
+      td:last-child { color: #a12e24; font-size: 19px; font-weight: 900; }
+      td small { color: #766f64; font-size: 11px; font-weight: 700; }
+      .compact { display: grid; grid-template-columns: 1fr 1.15fr; gap: 20px; align-items: center; }
+      .compact .group-head { margin: 0; }
+      .note { margin: 10px 3px 0; color: #777064; font-size: 12px; font-weight: 700; }
+      .footer { margin: 0 54px 40px; padding: 23px 26px; border-radius: 22px; color: #fff; background: linear-gradient(145deg,#a83a2e,#702119); box-shadow: 0 13px 28px rgba(103,25,18,.2); }
+      .footer-title { display: flex; justify-content: space-between; align-items: end; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.2); }
+      .footer-title h3 { margin: 0; font-family: "Noto Serif KR", serif; font-size: 27px; }
+      .footer-title span { color: #f5d9c2; font-size: 13px; font-weight: 800; }
+      .contact-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 18px; padding-top: 15px; }
+      .contact { display: grid; grid-template-columns: 72px 1fr; gap: 9px; align-items: center; }
+      .contact b { color: rgba(255,255,255,.65); font-size: 13px; }
+      .contact strong { font-size: 19px; }
+      .order-example { padding-left: 18px; border-left: 1px solid rgba(255,255,255,.2); color: rgba(255,255,255,.88); font-size: 14px; font-weight: 700; line-height: 1.6; }
+      .order-example b { display: block; color: #ffddad; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <main id="poster">
+      <section class="hero">
+        <img src="./enbu-orchard-1.jpg" alt="" />
+        <div class="shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">천연의 빛은 명품</p>
+          <h1>얼음골<br /><span>엔부 사과</span></h1>
+          <p class="desc">아삭한 식감과 산뜻한 단맛을 담은 밀양 얼음골 엔부</p>
+          <div class="pill">전 상품 택배비 포함</div><div class="shipping">10월 19일(월)부터 발송</div>
+        </div>
+      </section>
+
+      <div class="notice"><b>발송 안내</b><span>10월 19일 월요일부터 순차 발송합니다.</span></div>
+
+      <section class="prices">
+        <div class="group">
+          <div class="group-head"><div><p>한 상자 가득 넉넉하게</p><h2>10kg</h2></div><b>택배비 포함</b></div>
+          <table>
+            <thead><tr><th>과수</th><th>1개 평균 중량</th><th>1개 평균 가격</th><th>상자 가격</th></tr></thead>
+            <tbody>
+              <tr><td>20과</td><td>약 500g</td><td>7,000원</td><td>140,000원</td></tr>
+              <tr><td>26과</td><td>약 385g</td><td>약 4,615원</td><td>120,000원</td></tr>
+              <tr><td>30과</td><td>약 333g</td><td>약 3,667원</td><td>110,000원</td></tr>
+              <tr><td>36과</td><td>약 278g</td><td>약 2,361원</td><td>85,000원</td></tr>
+              <tr><td>40과</td><td>약 250g</td><td>1,875원</td><td>75,000원</td></tr>
+              <tr><td>46과</td><td>약 217g</td><td>약 1,413원</td><td>65,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="group">
+          <div class="group-head"><div><p>마음을 담은 선물</p><h2>선물용 5kg</h2></div><b>택배비 포함</b></div>
+          <table>
+            <thead><tr><th>과수</th><th>1개 평균 중량</th><th>1개 평균 가격</th><th>상자 가격</th></tr></thead>
+            <tbody>
+              <tr><td>10과</td><td>약 500g</td><td>7,000원</td><td>70,000원</td></tr>
+              <tr><td>13과</td><td>약 385g</td><td>약 4,615원</td><td>60,000원</td></tr>
+              <tr><td>15과</td><td>약 333g</td><td>약 3,667원</td><td>55,000원</td></tr>
+              <tr><td>18과</td><td>약 278g</td><td>2,500원</td><td>45,000원</td></tr>
+              <tr><td>20과</td><td>약 250g</td><td>2,000원</td><td>40,000원</td></tr>
+              <tr><td>23과</td><td>약 217g</td><td>약 1,522원</td><td>35,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="group compact">
+          <div class="group-head"><div><p>부담 없이 정성스럽게</p><h2>선물용 3kg</h2></div><b>택배비 포함</b></div>
+          <table><thead><tr><th>과수</th><th>1개 평균</th><th>상자 가격</th></tr></thead><tbody><tr><td>12과</td><td>약 250g<br /><small>2,500원</small></td><td>30,000원</td></tr></tbody></table>
+        </div>
+        <p class="note">개당 중량과 가격은 총 중량·상자 가격을 과수로 나눈 평균값입니다.</p>
+      </section>
+
+      <section class="footer">
+        <div class="footer-title"><h3>주문 및 입금 안내</h3><span>문자로 주문해 주세요</span></div>
+        <div class="contact-grid">
+          <div>
+            <div class="contact"><b>주문처</b><strong>윤성택 · 010-5093-0672</strong></div>
+            <div class="contact"><b>입금</b><strong>농협 · 356-0975-2573-23</strong></div>
+          </div>
+          <div class="order-example"><b>문자 주문 예시</b>주문자 성함 / 집주소 / 받는 사람 핸드폰 번호 / 엔부사과 5키로 15과 55,000원 2박스</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
